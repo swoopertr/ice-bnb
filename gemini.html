@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE-BNB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px 12px;
+            background-color: #f5f5f5;
+        }
+        .header .search-bar input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+            width: 100%;
+        }
+        .header .search-bar svg {
+            margin-right: 8px;
+            color: #888;
+        }
+        .header .user-menu {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-menu .menu-icon {
+            font-size: 24px;
+            margin-right: 20px;
+            color: #555;
+        }
+        .header .user-menu .label {
+            margin-right: 15px;
+            font-weight: 500;
+            color: #555;
+        }
+        .header .user-menu .avatar {
+            width: 35px;
+            height: 35px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+        .card-image {
+            background-color: #f0f0f0;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 1px solid #eee;
+        }
+        .card-image .label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0,0,0,0.1);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .card-image .heart-icon {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            color: #aaa;
+            cursor: pointer;
+        }
+        .card-image .shapes {
+            display: flex;
+            gap: 15px;
+        }
+        .card-image .shape {
+            width: 50px;
+            height: 50px;
+            background-color: #dcdcdc;
+            transform: rotate(45deg); /* To simulate the rotated squares/stars */
+        }
+        .card-image .shape.circle {
+            border-radius: 50%;
+            transform: none; /* Circles don't need rotation */
+        }
+        .card-image .shape.triangle {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 45px solid #dcdcdc;
+            transform: none;
+        }
+        .card-image .shape.star {
+            position: relative;
+            width: 0;
+            height: 0;
+            margin: 25px 0; /* Adjust margin for star shape */
+            border-right: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-bottom: 20px solid #dcdcdc;
+            transform: rotate(35deg);
+        }
+        .card-image .shape.star:before,
+        .card-image .shape.star:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 0;
+            height: 0;
+            border-right: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-bottom: 20px solid #dcdcdc;
+            transform: rotate(-70deg);
+        }
+        .card-image .shape.star:after {
+            left: -30px;
+            top: 0;
+            transform: rotate(70deg);
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+        .card-content .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .card-content .description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .footer {
+            background-color: #fff;
+            padding: 50px 40px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            margin-bottom: 30px;
+        }
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+        .footer-section ul li a:hover {
+            color: #000;
+        }
+        .footer .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .footer .social-icons svg {
+            font-size: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">ICE-BNB</div>
+        <div class="search-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="">
+        </div>
+        <div class="user-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <span class="label">Label</span>
+            <div class="avatar"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <span class="label">Label</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart heart-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <div class="shapes">
+                    <div class="shape star"></div>
+                    <div class="shape triangle"></div>
+                    <div class="shape circle"></div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="title">Title</div>
+                <div class="description">Lorem ipsum dolor sit amet</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-section">
+            <div class="social-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trello"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="9"></rect><rect x="14" y="7" width="3" height="5"></rect></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.94C18.87 4 12 4 12 4s-6.87 0-8.6.48a2.78 2.78 0 0 0-1.94 1.94C2 8.13 2 12 2 12s0 3.87.46 5.58a2.78 2.78 0 0 0 1.94 1.94C5.13 20 12 20 12 20s6.87 0 8.6-.48a2.78 2.78 0 0 0 1.94-1.94C22 15.87 22 12 22 12s0-3.87-.46-5.58z"></path><polygon points="10 15 15 12 10 9 10 15"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Use cases</h3>
+            <ul>
+                <li><a href="#">UI design</a></li>
+                <li><a href="#">UX design</a></li>
+                <li><a href="#">Wireframing</a></li>
+                <li><a href="#">Diagramming</a></li>
+                <li><a href="#">Brainstorming</a></li>
+                <li><a href="#">Online whiteboard</a></li>
+                <li><a href="#">Team collaboration</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Prototyping</a></li>
+                <li><a href="#">Development features</a></li>
+                <li><a href="#">Design systems</a></li>
+                <li><a href="#">Collaboration features</a></li>
+                <li><a href="#">Design process</a></li>
+                <li><a href="#">FigJam</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Best practices</a></li>
+                <li><a href="#">Colors</a></li>
+                <li><a href="#">Color wheel</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Resource library</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

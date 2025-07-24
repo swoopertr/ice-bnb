@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICE-BNB</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f6fc;
+    }
+    header {
+      background-color: #f0eafa;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .logo {
+      font-weight: bold;
+      background-color: black;
+      color: gold;
+      padding: 5px 10px;
+      font-size: 24px;
+    }
+    .search {
+      flex: 1;
+      margin: 0 20px;
+    }
+    .search input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #ece6f6;
+      border-radius: 10px;
+      padding: 10px;
+      position: relative;
+    }
+    .card .label {
+      background-color: white;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 12px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .card .heart {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .card .image {
+      background-color: #d5cfe0;
+      height: 100px;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+    footer {
+      background: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    footer div {
+      margin: 10px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ICE-BNB</div>
+  <div class="search">
+    <input type="text" placeholder="Search...">
+  </div>
+  <div class="nav-right">
+    <span>☰ Label</span>
+    <span>👤</span>
+  </div>
+</header>
+
+<main class="grid">
+  <!-- 8 sample cards -->
+  ${Array.from({length: 8}).map(() => `
+    <div class="card">
+      <span class="label">Label</span>
+      <span class="heart">♡</span>
+      <div class="image"></div>
+      <h3>Title</h3>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+  `).join('')}
+</main>
+
+<footer>
+  <div>
+    <h4>Use cases</h4>
+    <ul>
+      <li>UI design</li>
+      <li>UX design</li>
+      <li>Wireframing</li>
+      <li>Diagramming</li>
+      <li>Brainstorming</li>
+      <li>Online whiteboard</li>
+      <li>Team collaboration</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Explore</h4>
+    <ul>
+      <li>Design</li>
+      <li>Prototyping</li>
+      <li>Development features</li>
+      <li>Design systems</li>
+      <li>Collaboration features</li>
+      <li>Design process</li>
+      <li>FigJam</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Resources</h4>
+    <ul>
+      <li>Blog</li>
+      <li>Best practices</li>
+      <li>Colors</li>
+      <li>Color wheel</li>
+      <li>Support</li>
+      <li>Developers</li>
+      <li>Resource library</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

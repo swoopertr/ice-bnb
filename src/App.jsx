@@ -1,14 +1,37 @@
 import { useState } from 'react'
 import Button from '@mui/material/Button';
-import './App.css'
 import RealismButton from './components/Buttons/RealismButton';
+import Header from './components/Common/Header';
+import Footer from './components/Common/Footer';
+import Home from './components/Home/Home';
+
 
 function App() {
   return (
     <>
-      <div className="typography-h1 text-primary">Hello world</div>
+      <Header />
+      <Home />
+      {/** make routes 
+       * //todo : content
+       * -----------
+       * url : /
+       * user: anonim
+       * component : home
+       * -----------
+       * url : /
+       * user: logged in
+       * component : home_logged_in
+       * -----------
+       * 
+      */}
+
+
+      <Footer />
+
+
+      {/* <div className="typography-h1 text-primary">Hello world</div>
       <Button variant="contained">Hello world</Button>
-      <RealismButton/>
+      <RealismButton/> */}
     </>
   )
 }
