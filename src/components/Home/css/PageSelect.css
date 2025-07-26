@@ -1,0 +1,39 @@
+.bnb-page-select-area {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bnb-page-select-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-select-div { 
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    width: 35px; height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+    transition: .3s ease all;
+}
+
+.page-select-div:hover { 
+    background-color: rgba(0, 0, 0, 0.04);
+    color: black;
+}
+
+.active-page-select-div{
+    background-color: rgba(0, 0, 0, 0.04) !important;
+    color: black !important;
+}

@@ -1,7 +1,15 @@
+import React from "react";
+
+import ListingBnb from "./ListingBnb";
+import Map from "./Map"
+
 export default function Home(){
 return (
     <>
-        <p>CONTENT</p> 
+        <div className="home-area">
+            <ListingBnb />
+            <Map />
+        </div>
     </>
 );
 }
