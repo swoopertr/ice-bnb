@@ -14,6 +14,12 @@ app.get('/homes', async (c) => {
   //return c.text(JSON.stringify(HomeData));
 })
 
+app.get('/search/:city', async (c) => {
+  const city = c.req.param('city');
+  const result = HomeData.filter(item => item.address.city.startsWith(city));
+  return c.json(result);
+})
+
 serve({
   fetch: app.fetch,
   port: 3000

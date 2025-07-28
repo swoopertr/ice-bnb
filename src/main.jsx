@@ -12,11 +12,16 @@ import './components/Home/css/Map.css';
 import './components/Home/css/HomeCardBnb.css';
 import App from './App.jsx'
 
+
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <StyledEngineProvider enableCssLayer>
       <GlobalStyles styles="@layer theme, base, mui, components, utilities;" />
-      <App />
+     
+        <App />
+     
     </StyledEngineProvider>
     
   </StrictMode>,

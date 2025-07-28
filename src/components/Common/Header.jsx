@@ -3,18 +3,18 @@ import Logo from "./Logo";
 import PrimarySearchAppBar from "./PrimarySearchAppBar";
 
 const headerStyle= { display: "flex",
-    "justify-content": "space-evenly",
-    "align-items": "center",
+    justifyContent : "space-evenly",
+    alignItems: "center",
     padding: "20px"};
 
-export default function Header() {
+export default function Header({searchFn}) {
   return (
     <>
       <nav>
         <div className="header" style={headerStyle}>
             
             <Logo />
-            <PrimarySearchAppBar />
+            <PrimarySearchAppBar searchFn={searchFn} />
             <AccountMenu />
         </div>
 

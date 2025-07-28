@@ -1,7 +1,7 @@
 import React from "react";
 
 import ListingBnb from "./ListingBnb";
-import Map from "./Map"
+import Map from "./Map";
 
 export default function Home(){
 return (

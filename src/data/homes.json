@@ -1,4 +1,4 @@
-const homeData = [
+[
   {
     "id": "733d8be6-5708-4551-b221-5c1156fd2b9a",
     "email": "gamble@.directory",
@@ -517,7 +517,7 @@ const homeData = [
     "type": "room",
     "username": "Dickerson_Bernard",
     "address": {
-      "city": "Ola",
+      "city": "Coultervillle",
       "street": "Turnbull Avenue"
     },
     "owner": {
@@ -549,7 +549,7 @@ const homeData = [
     "type": "home",
     "username": "Jackson_Floyd",
     "address": {
-      "city": "Ola",
+      "city": "Yogaville",
       "street": "Etna Street"
     },
     "owner": {
@@ -581,7 +581,7 @@ const homeData = [
     "type": "home",
     "username": "Oneal_Joseph",
     "address": {
-      "city": "Ola",
+      "city": "Ribera",
       "street": "Howard Alley"
     },
     "owner": {
@@ -613,7 +613,7 @@ const homeData = [
     "type": "room",
     "username": "Flores_Barrera",
     "address": {
-      "city": "Ola",
+      "city": "Caron",
       "street": "Seeley Street"
     },
     "owner": {
@@ -645,7 +645,7 @@ const homeData = [
     "type": "room",
     "username": "Hampton_Hendricks",
     "address": {
-      "city": "Ola",
+      "city": "Day",
       "street": "Oxford Walk"
     },
     "owner": {
@@ -677,7 +677,7 @@ const homeData = [
     "type": "room",
     "username": "Newton_Carney",
     "address": {
-      "city": "Ola",
+      "city": "Wolcott",
       "street": "Union Street"
     },
     "owner": {
@@ -709,7 +709,7 @@ const homeData = [
     "type": "room",
     "username": "Cervantes_Rosario",
     "address": {
-      "city": "Ola",
+      "city": "Laurelton",
       "street": "Blake Avenue"
     },
     "owner": {
@@ -741,7 +741,7 @@ const homeData = [
     "type": "home",
     "username": "Gentry_Jensen",
     "address": {
-      "city": "Ola",
+      "city": "Crumpler",
       "street": "Shale Street"
     },
     "owner": {
@@ -773,7 +773,7 @@ const homeData = [
     "type": "room",
     "username": "Haney_Wilcox",
     "address": {
-      "city": "Ola",
+      "city": "Northchase",
       "street": "Wythe Avenue"
     },
     "owner": {
@@ -805,7 +805,7 @@ const homeData = [
     "type": "room",
     "username": "Hatfield_Sims",
     "address": {
-      "city": "Ola",
+      "city": "Brandywine",
       "street": "Franklin Avenue"
     },
     "owner": {
@@ -837,7 +837,7 @@ const homeData = [
     "type": "room",
     "username": "Brown_Page",
     "address": {
-      "city": "Ola",
+      "city": "Russellville",
       "street": "Dahl Court"
     },
     "owner": {
@@ -869,7 +869,7 @@ const homeData = [
     "type": "home",
     "username": "Phillips_Wall",
     "address": {
-      "city": "Ola",
+      "city": "Fredericktown",
       "street": "Mayfair Drive"
     },
     "owner": {
@@ -2912,5 +2912,3 @@ const homeData = [
     "rate": 3
   }
 ]
-
-export default homeData;
