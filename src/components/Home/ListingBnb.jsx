@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import PageSelect from "./PageSelect";
 import HomeCardBnb from "./HomeCardBnb";
 import { DataContext } from "../../App";
 
-const ITEMS_PER_PAGE = 9;
+
 
 export default function ListingBnb() {
   const data = useContext(DataContext);
-
+  const [currentPage , setCurrentPage]= useState(0);
   return (
     <>
       <div className="home-list-area">
@@ -22,7 +22,7 @@ export default function ListingBnb() {
               return <HomeCardBnb key={index} item={item} />;
             })}
         </div>
-        <PageSelect />
+        <PageSelect ItemsCount={data.length} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </div>
     </>
   );
