@@ -7,14 +7,19 @@ const headerStyle= { display: "flex",
     alignItems: "center",
     padding: "20px"};
 
-export default function Header({searchFn}) {
+export default function Header({searchFn, currentPage, setSearchText, setCurrentPage}) {
   return (
     <>
       <nav>
         <div className="header" style={headerStyle}>
             
             <Logo />
-            <PrimarySearchAppBar searchFn={searchFn} />
+            <PrimarySearchAppBar 
+              searchFn={searchFn} 
+              currentPage={currentPage} 
+              setSearchText={setSearchText} 
+              setCurrentPage={setCurrentPage}
+              />
             <AccountMenu />
         </div>
 

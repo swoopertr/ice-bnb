@@ -1,13 +1,33 @@
 import React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import CardActionArea from "@mui/material/CardActionArea";
+import ImageCarousel from "../Common/ImageCarousel/ImageCarousel";
 
-export default function HomeCardBnb({item}){
-    return (
-        <>
-            <div className="list-bnb-item">
-                street : {item.address.street}
-            </div>
-        </>
-    )
+export default function HomeCardBnb({ item }) {
+  return (
+    <>
+      <Card sx={{ maxWidth: 345 }}>
+        <ImageCarousel />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {item.address.city} - {item.address.street}
+          </Typography>
+          <Typography gutterBottom variant="h6" component="div">
+            Owner: {item.owner.name}
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            {item.description}
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            price: {item.price.amount} {item.price.currency}
+          </Typography>
+        </CardContent>
+      </Card>
+    </>
+  );
 }
 
 // {
@@ -22,7 +42,7 @@ export default function HomeCardBnb({item}){
 //     "owner": {
 //       "id": "7ea5c7ee-7c25-411a-b874-6ea07a7eef84",
 //       "name": "Faith Douglas",
-//       "image": "https://picsum.photos/id/1/200/300"
+//       "image": "https://picsum.photos/id/1/50/50"
 //     },
 //     "image": [
 //       "https://picsum.photos/id/1/200/300",

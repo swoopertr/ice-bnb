@@ -46,14 +46,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar({searchFn}) {
+export default function PrimarySearchAppBar({searchFn, currentPage, setSearchText, setCurrentPage}) {
 
   const searchHandler = (e) => {
     if (e.key === "Enter") {
-      const resultArr = searchUtil.search(e.target.value);
-      searchFn(resultArr);
-
-      //todo update context with relevant filtered data.
+      let searchText = e.target.value;
+      setSearchText(searchText);
+      setCurrentPage(0);
+      const resultObj = searchUtil.search(searchText, currentPage);
+      searchFn(resultObj);
     }
   };
 

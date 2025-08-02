@@ -3,15 +3,16 @@ import React, { useState } from "react";
 const ITEMS_SEEN = 5;
 
 export default function PageSelectArea({ currentPage, toplamSayfa, setPage }) {
-  const [isLittle, setIsLittle] = useState(toplamSayfa <= 5);
-
+ 
   return (
+   
     <div className="bnb-page-select-buttons">
+        
       {/* baslangic durumu */}
-      {currentPage < 4 && ( //baslangic durumu
+      {currentPage < 4 && ( 
         <>
           {new Array(ITEMS_SEEN).fill(1).map((item, index) => {
-            console.log(toplamSayfa);
+         
             if (index + 1 <= toplamSayfa) {
               return (
                 <>
@@ -29,7 +30,7 @@ export default function PageSelectArea({ currentPage, toplamSayfa, setPage }) {
               );
             }
           })}
-          {!isLittle && (
+          {!(toplamSayfa <= 5) && (
             <>
               <div className="page-select-more-div">...</div>
               <div
@@ -46,7 +47,7 @@ export default function PageSelectArea({ currentPage, toplamSayfa, setPage }) {
       {/* orta durum */}
       {currentPage >= 4 &&
         currentPage + 4 <= toplamSayfa &&
-        !isLittle && ( //baslangic durumu
+        !(toplamSayfa <= 5) && (
           <>
             <div className="page-select-div" data-index={0} onClick={setPage}>
               1
@@ -82,7 +83,7 @@ export default function PageSelectArea({ currentPage, toplamSayfa, setPage }) {
           </>
         )}
       {/* son durum */}
-      {currentPage + 4 > toplamSayfa && !isLittle && (
+      {currentPage + 4 > toplamSayfa && !(toplamSayfa <= 5) && (
         <>
           <div className="page-select-div" data-index={0} onClick={setPage}>
             1

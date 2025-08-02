@@ -1,6 +1,4 @@
 import { useState, createContext } from "react";
-import Button from "@mui/material/Button";
-import RealismButton from "./components/Buttons/RealismButton";
 import Header from "./components/Common/Header";
 import Footer from "./components/Common/Footer";
 import Home from "./components/Home/Home";
@@ -8,14 +6,30 @@ import Home from "./components/Home/Home";
 export const DataContext = createContext();
 
 function App() {
-  const [searchResult, setSearchResult] = useState([]);
-
+  const [searchResult, setSearchResult] = useState({
+            data: [],
+            totalCount: 0,
+            pageCount: 0
+        });
+  const [searchText, setSearchText] = useState("");
+  const [currentPage , setCurrentPage]= useState(0);
 
   return (
     <>
+      
       <DataContext value={searchResult}>
-        <Header searchFn={setSearchResult} />
-        <Home />
+        <Header 
+          searchFn={setSearchResult} 
+          currentPage={currentPage} 
+          setSearchText={setSearchText}
+          setCurrentPage={setCurrentPage} />
+        <h1>{currentPage}</h1>
+        <Home 
+          currentPage={currentPage} 
+          setCurrentPage={setCurrentPage} 
+          setSearchResult={setSearchResult} 
+          searchText={searchText} 
+          />
         {/** make routes
          * //todo : content
          * -----------
@@ -33,9 +47,6 @@ function App() {
         <Footer />
       </DataContext>
 
-      {/* <div className="typography-h1 text-primary">Hello world</div>
-      <Button variant="contained">Hello world</Button>
-      <RealismButton/> */}
     </>
   );
 }

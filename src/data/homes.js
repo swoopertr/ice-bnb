@@ -22,7 +22,7 @@ const homeData = [
     ],
     "description": "in non aute officia ad occaecat minim qui ex minim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2756
     },
     "location": {
@@ -54,7 +54,7 @@ const homeData = [
     ],
     "description": "do nostrud aliqua id esse magna consectetur laboris nostrud et",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1306
     },
     "location": {
@@ -86,7 +86,7 @@ const homeData = [
     ],
     "description": "nostrud dolore et aute id eu aliqua id irure et",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1546
     },
     "location": {
@@ -118,7 +118,7 @@ const homeData = [
     ],
     "description": "nulla adipisicing proident aliqua nulla qui est esse sunt amet",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1914
     },
     "location": {
@@ -150,7 +150,7 @@ const homeData = [
     ],
     "description": "incididunt amet ex nostrud ipsum consequat ipsum sit consequat pariatur",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1806
     },
     "location": {
@@ -182,7 +182,7 @@ const homeData = [
     ],
     "description": "laborum tempor deserunt commodo ut velit amet irure reprehenderit sit",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1546
     },
     "location": {
@@ -214,7 +214,7 @@ const homeData = [
     ],
     "description": "magna occaecat cillum magna incididunt laboris veniam nostrud non ipsum",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1640
     },
     "location": {
@@ -246,7 +246,7 @@ const homeData = [
     ],
     "description": "laborum do dolore aliquip ad aliquip duis ipsum quis culpa",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2316
     },
     "location": {
@@ -278,7 +278,7 @@ const homeData = [
     ],
     "description": "in sunt sit est adipisicing esse nisi eiusmod veniam ad",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 851
     },
     "location": {
@@ -310,7 +310,7 @@ const homeData = [
     ],
     "description": "proident eu aute eiusmod do amet anim Lorem sunt non",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2717
     },
     "location": {
@@ -342,7 +342,7 @@ const homeData = [
     ],
     "description": "minim do velit proident consequat est est nisi fugiat sint",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1200
     },
     "location": {
@@ -374,7 +374,7 @@ const homeData = [
     ],
     "description": "eu sunt Lorem dolor aute ex Lorem magna ex magna",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2184
     },
     "location": {
@@ -406,7 +406,7 @@ const homeData = [
     ],
     "description": "magna ut est esse elit fugiat eiusmod aliquip id nostrud",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2533
     },
     "location": {
@@ -438,7 +438,7 @@ const homeData = [
     ],
     "description": "incididunt amet fugiat adipisicing minim officia elit voluptate fugiat minim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2063
     },
     "location": {
@@ -470,7 +470,7 @@ const homeData = [
     ],
     "description": "adipisicing est et amet amet aliquip ex dolor est eu",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1623
     },
     "location": {
@@ -502,7 +502,7 @@ const homeData = [
     ],
     "description": "commodo culpa et ullamco excepteur non ut tempor elit exercitation",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 846
     },
     "location": {
@@ -534,7 +534,7 @@ const homeData = [
     ],
     "description": "velit cupidatat sunt voluptate dolor officia veniam qui proident velit",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 817
     },
     "location": {
@@ -566,7 +566,7 @@ const homeData = [
     ],
     "description": "ex eiusmod reprehenderit dolore esse cillum eu anim ut consectetur",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1063
     },
     "location": {
@@ -598,7 +598,7 @@ const homeData = [
     ],
     "description": "duis esse officia sit non aliqua ullamco dolor veniam officia",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1465
     },
     "location": {
@@ -630,7 +630,7 @@ const homeData = [
     ],
     "description": "tempor elit nostrud irure occaecat magna elit eu irure ad",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1723
     },
     "location": {
@@ -662,7 +662,7 @@ const homeData = [
     ],
     "description": "deserunt amet duis fugiat dolor laboris reprehenderit cupidatat ipsum ut",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1209
     },
     "location": {
@@ -694,7 +694,7 @@ const homeData = [
     ],
     "description": "exercitation eu eiusmod voluptate irure Lorem anim aliquip excepteur adipisicing",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2307
     },
     "location": {
@@ -726,7 +726,7 @@ const homeData = [
     ],
     "description": "ad nisi laboris sit duis proident fugiat reprehenderit ad nisi",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1099
     },
     "location": {
@@ -758,7 +758,7 @@ const homeData = [
     ],
     "description": "ex velit mollit ipsum eu eiusmod eiusmod anim velit culpa",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 830
     },
     "location": {
@@ -790,7 +790,7 @@ const homeData = [
     ],
     "description": "labore do eiusmod fugiat officia pariatur culpa laboris labore amet",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2642
     },
     "location": {
@@ -822,7 +822,7 @@ const homeData = [
     ],
     "description": "non mollit commodo eiusmod non esse anim ullamco adipisicing aliqua",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1821
     },
     "location": {
@@ -854,7 +854,7 @@ const homeData = [
     ],
     "description": "anim consectetur dolor aliqua sint esse aute esse exercitation nisi",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1529
     },
     "location": {
@@ -886,7 +886,7 @@ const homeData = [
     ],
     "description": "do labore qui veniam do reprehenderit et anim qui velit",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2064
     },
     "location": {
@@ -918,7 +918,7 @@ const homeData = [
     ],
     "description": "in aliqua elit culpa voluptate incididunt aliquip eiusmod quis mollit",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1196
     },
     "location": {
@@ -950,7 +950,7 @@ const homeData = [
     ],
     "description": "aliquip ex occaecat nulla nulla officia adipisicing est ipsum Lorem",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2582
     },
     "location": {
@@ -982,7 +982,7 @@ const homeData = [
     ],
     "description": "tempor sit laboris consequat id deserunt labore sint tempor nisi",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1636
     },
     "location": {
@@ -1014,7 +1014,7 @@ const homeData = [
     ],
     "description": "cupidatat qui nostrud culpa ipsum ea ut non voluptate adipisicing",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1943
     },
     "location": {
@@ -1046,7 +1046,7 @@ const homeData = [
     ],
     "description": "nulla id ex labore elit incididunt ipsum sint duis dolore",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1417
     },
     "location": {
@@ -1078,7 +1078,7 @@ const homeData = [
     ],
     "description": "eiusmod sit ex esse commodo ea cillum esse fugiat proident",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 850
     },
     "location": {
@@ -1110,7 +1110,7 @@ const homeData = [
     ],
     "description": "magna proident eu enim nisi ea consequat sint occaecat laboris",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1116
     },
     "location": {
@@ -1142,7 +1142,7 @@ const homeData = [
     ],
     "description": "tempor eu est dolore est sint proident sint eiusmod in",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2751
     },
     "location": {
@@ -1174,7 +1174,7 @@ const homeData = [
     ],
     "description": "mollit ipsum proident ea amet sint aliquip enim ullamco proident",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1350
     },
     "location": {
@@ -1206,7 +1206,7 @@ const homeData = [
     ],
     "description": "duis aute ad quis anim officia magna commodo ea dolore",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1165
     },
     "location": {
@@ -1238,7 +1238,7 @@ const homeData = [
     ],
     "description": "commodo nisi minim mollit culpa id tempor voluptate reprehenderit Lorem",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1791
     },
     "location": {
@@ -1270,7 +1270,7 @@ const homeData = [
     ],
     "description": "veniam ea non laboris Lorem qui mollit laborum dolor anim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2710
     },
     "location": {
@@ -1302,7 +1302,7 @@ const homeData = [
     ],
     "description": "sit excepteur consequat nulla proident sint adipisicing Lorem irure ex",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1734
     },
     "location": {
@@ -1334,7 +1334,7 @@ const homeData = [
     ],
     "description": "veniam do elit ea labore est do enim tempor exercitation",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1783
     },
     "location": {
@@ -1366,7 +1366,7 @@ const homeData = [
     ],
     "description": "ut reprehenderit non ex aliquip mollit quis eu sunt dolor",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2179
     },
     "location": {
@@ -1398,7 +1398,7 @@ const homeData = [
     ],
     "description": "ad commodo commodo qui laboris nostrud tempor occaecat ea enim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1828
     },
     "location": {
@@ -1430,7 +1430,7 @@ const homeData = [
     ],
     "description": "laboris veniam sunt ipsum magna officia commodo amet eiusmod eu",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1885
     },
     "location": {
@@ -1462,7 +1462,7 @@ const homeData = [
     ],
     "description": "esse aliquip incididunt tempor esse nulla tempor occaecat occaecat minim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1113
     },
     "location": {
@@ -1494,7 +1494,7 @@ const homeData = [
     ],
     "description": "et aliqua exercitation ad magna deserunt reprehenderit do in dolor",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1370
     },
     "location": {
@@ -1526,7 +1526,7 @@ const homeData = [
     ],
     "description": "sunt est eu laboris enim sint eu ut irure non",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2756
     },
     "location": {
@@ -1558,7 +1558,7 @@ const homeData = [
     ],
     "description": "duis esse fugiat adipisicing mollit est sit nulla qui dolor",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 981
     },
     "location": {
@@ -1590,7 +1590,7 @@ const homeData = [
     ],
     "description": "reprehenderit consequat dolor Lorem commodo deserunt dolor nulla et ea",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1302
     },
     "location": {
@@ -1622,7 +1622,7 @@ const homeData = [
     ],
     "description": "et proident fugiat consequat aliqua mollit anim labore deserunt enim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 824
     },
     "location": {
@@ -1654,7 +1654,7 @@ const homeData = [
     ],
     "description": "laborum Lorem pariatur ad sit proident enim exercitation ipsum ullamco",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1855
     },
     "location": {
@@ -1686,7 +1686,7 @@ const homeData = [
     ],
     "description": "et ullamco aute ipsum nulla elit eiusmod anim ad irure",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1342
     },
     "location": {
@@ -1718,7 +1718,7 @@ const homeData = [
     ],
     "description": "reprehenderit nulla sit est dolor aliqua exercitation aliquip et occaecat",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1695
     },
     "location": {
@@ -1750,7 +1750,7 @@ const homeData = [
     ],
     "description": "eu ea dolor irure minim duis pariatur commodo mollit amet",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1171
     },
     "location": {
@@ -1782,7 +1782,7 @@ const homeData = [
     ],
     "description": "ipsum eiusmod non reprehenderit sint proident consequat dolor eu voluptate",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1389
     },
     "location": {
@@ -1814,7 +1814,7 @@ const homeData = [
     ],
     "description": "commodo dolore laborum deserunt laboris ex enim sint excepteur consequat",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1239
     },
     "location": {
@@ -1846,7 +1846,7 @@ const homeData = [
     ],
     "description": "eu aliqua voluptate quis sint excepteur tempor id sunt amet",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1573
     },
     "location": {
@@ -1878,7 +1878,7 @@ const homeData = [
     ],
     "description": "fugiat aliqua incididunt voluptate culpa elit ea et minim esse",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1110
     },
     "location": {
@@ -1910,7 +1910,7 @@ const homeData = [
     ],
     "description": "ut ipsum consequat occaecat ea laborum est qui labore aliqua",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2517
     },
     "location": {
@@ -1942,7 +1942,7 @@ const homeData = [
     ],
     "description": "esse excepteur adipisicing enim nisi id voluptate fugiat dolor quis",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2655
     },
     "location": {
@@ -1974,7 +1974,7 @@ const homeData = [
     ],
     "description": "nulla esse anim non non reprehenderit velit dolore eiusmod labore",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1913
     },
     "location": {
@@ -2006,7 +2006,7 @@ const homeData = [
     ],
     "description": "do ipsum dolore officia non occaecat nisi consectetur nisi incididunt",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2583
     },
     "location": {
@@ -2038,7 +2038,7 @@ const homeData = [
     ],
     "description": "mollit excepteur aliquip consectetur aliqua nostrud sit esse dolor commodo",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2797
     },
     "location": {
@@ -2070,7 +2070,7 @@ const homeData = [
     ],
     "description": "ut est nostrud tempor commodo elit aliqua nisi ea nulla",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1530
     },
     "location": {
@@ -2102,7 +2102,7 @@ const homeData = [
     ],
     "description": "eu exercitation culpa qui ea est proident laboris sunt ad",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1011
     },
     "location": {
@@ -2134,7 +2134,7 @@ const homeData = [
     ],
     "description": "cillum adipisicing consequat ut duis elit irure proident aliqua enim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1071
     },
     "location": {
@@ -2166,7 +2166,7 @@ const homeData = [
     ],
     "description": "ullamco sint tempor cillum excepteur velit laborum officia dolor nulla",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1317
     },
     "location": {
@@ -2198,7 +2198,7 @@ const homeData = [
     ],
     "description": "Lorem ea dolor duis ad ullamco minim nisi do consectetur",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1660
     },
     "location": {
@@ -2230,7 +2230,7 @@ const homeData = [
     ],
     "description": "esse adipisicing id cupidatat sunt dolore pariatur id esse nisi",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 995
     },
     "location": {
@@ -2262,7 +2262,7 @@ const homeData = [
     ],
     "description": "exercitation Lorem occaecat ipsum minim anim consequat sit aliquip ut",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2353
     },
     "location": {
@@ -2294,7 +2294,7 @@ const homeData = [
     ],
     "description": "eiusmod in dolore eu reprehenderit adipisicing voluptate deserunt do dolore",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1225
     },
     "location": {
@@ -2326,7 +2326,7 @@ const homeData = [
     ],
     "description": "sunt Lorem quis quis reprehenderit sit aliqua eiusmod ipsum magna",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1633
     },
     "location": {
@@ -2358,7 +2358,7 @@ const homeData = [
     ],
     "description": "incididunt excepteur voluptate duis officia et aliqua veniam ullamco amet",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2323
     },
     "location": {
@@ -2390,7 +2390,7 @@ const homeData = [
     ],
     "description": "laboris enim nostrud veniam cillum aliqua deserunt laboris quis aliquip",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1182
     },
     "location": {
@@ -2422,7 +2422,7 @@ const homeData = [
     ],
     "description": "est pariatur in minim incididunt qui ex ea cupidatat sit",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2632
     },
     "location": {
@@ -2454,7 +2454,7 @@ const homeData = [
     ],
     "description": "et commodo enim laborum ex labore velit cupidatat cupidatat ex",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2588
     },
     "location": {
@@ -2486,7 +2486,7 @@ const homeData = [
     ],
     "description": "fugiat reprehenderit esse qui deserunt duis in dolore magna id",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2724
     },
     "location": {
@@ -2518,7 +2518,7 @@ const homeData = [
     ],
     "description": "consequat reprehenderit ut amet ut consectetur mollit enim consequat aute",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1612
     },
     "location": {
@@ -2550,7 +2550,7 @@ const homeData = [
     ],
     "description": "Lorem elit esse et irure amet ea enim ut aliqua",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2776
     },
     "location": {
@@ -2582,7 +2582,7 @@ const homeData = [
     ],
     "description": "sunt officia consequat incididunt proident enim dolore id tempor duis",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2041
     },
     "location": {
@@ -2614,7 +2614,7 @@ const homeData = [
     ],
     "description": "aute consequat anim voluptate cillum occaecat cillum consectetur reprehenderit laboris",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1610
     },
     "location": {
@@ -2646,7 +2646,7 @@ const homeData = [
     ],
     "description": "elit dolor cupidatat officia consequat labore voluptate ut aliquip et",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2122
     },
     "location": {
@@ -2678,7 +2678,7 @@ const homeData = [
     ],
     "description": "velit cupidatat labore cupidatat nostrud est dolor ea nostrud commodo",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2622
     },
     "location": {
@@ -2710,7 +2710,7 @@ const homeData = [
     ],
     "description": "cillum non dolor Lorem id id irure nulla id veniam",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2372
     },
     "location": {
@@ -2742,7 +2742,7 @@ const homeData = [
     ],
     "description": "esse deserunt sint dolore fugiat ea cillum consectetur occaecat officia",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1634
     },
     "location": {
@@ -2774,7 +2774,7 @@ const homeData = [
     ],
     "description": "ex aute ea elit qui proident ea duis cupidatat sit",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2179
     },
     "location": {
@@ -2806,7 +2806,7 @@ const homeData = [
     ],
     "description": "duis ex cillum eu minim dolor elit consequat consequat deserunt",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1552
     },
     "location": {
@@ -2838,7 +2838,7 @@ const homeData = [
     ],
     "description": "nostrud consectetur cillum laborum dolor officia tempor tempor ea id",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1212
     },
     "location": {
@@ -2870,7 +2870,7 @@ const homeData = [
     ],
     "description": "laboris ea incididunt veniam fugiat qui proident nostrud mollit enim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 1808
     },
     "location": {
@@ -2902,7 +2902,7 @@ const homeData = [
     ],
     "description": "nulla laboris ullamco veniam amet nisi aute labore ipsum anim",
     "price": {
-      "currency": "TR",
+      "currency": "TL",
       "amount": 2518
     },
     "location": {

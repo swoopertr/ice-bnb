@@ -5,24 +5,26 @@ import { DataContext } from "../../App";
 
 
 
-export default function ListingBnb() {
-  const data = useContext(DataContext);
-  const [currentPage , setCurrentPage]= useState(0);
+export default function ListingBnb({currentPage , setCurrentPage, setSearchResult, searchText}) {
+  const contextData = useContext(DataContext);
+  
   return (
     <>
       <div className="home-list-area">
         <PageSelect 
-          ItemsCount={data.length} 
+          ItemsCount={contextData.totalCount} 
           currentPage={currentPage} 
           setCurrentPage={setCurrentPage} 
+          setSearchResult={setSearchResult}
+          searchText={searchText}
         />
         <div className="list-bnb-result">
-          Find {data && data.length} Item in search
+          Find {contextData.totalCount && contextData.totalCount} Item in search
         </div>
 
         <div className="list-bnb-area">
-          {data &&
-            data.map((item, index) => {
+          {contextData.totalCount &&
+            contextData.data.map((item, index) => {
               return <HomeCardBnb key={index} item={item} />;
             })}
         </div>
