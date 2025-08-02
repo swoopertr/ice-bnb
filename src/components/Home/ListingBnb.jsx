@@ -11,9 +11,13 @@ export default function ListingBnb() {
   return (
     <>
       <div className="home-list-area">
+        <PageSelect 
+          ItemsCount={data.length} 
+          currentPage={currentPage} 
+          setCurrentPage={setCurrentPage} 
+        />
         <div className="list-bnb-result">
           Find {data && data.length} Item in search
-         
         </div>
 
         <div className="list-bnb-area">
@@ -22,7 +26,7 @@ export default function ListingBnb() {
               return <HomeCardBnb key={index} item={item} />;
             })}
         </div>
-        <PageSelect ItemsCount={data.length} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+       
       </div>
     </>
   );
